@@ -6,23 +6,21 @@ public class Animal {
 
     protected int weight;
 
-    public Animal() {
-        name="generic animal";
-        weight=25;
+    public void Animal() {
+        name = "default";
+        weight = 0;
     }
 
     public void eat() {
-        System.out.println("Animal eating...");
+        System.out.println("Eating the victim...");
     }
 
     public void speak() {
-        System.out.println("Animal speaking...");
+        System.out.println("'I see you lonely stranger -_-'");
     }
 
     @Override
     public String toString() {
-        return "My animal:" + "\nName:\t" + name + "\nWeight:\t" + weight+" kg";
+        return "Animal: " + "\nname: " + name + ", weight=" + weight;
     }
-
- 
 }
